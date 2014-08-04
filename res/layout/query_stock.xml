@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/top_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_hight"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/default_tv"
+                    android:text="标签：" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <Button
+                        android:id="@+id/query_stock_find_btn"
+                        style="@style/right_btn"
+                        android:text="查" />
+
+                    <Button
+                        android:id="@+id/query_stock_scan_btn"
+                        style="@style/default_text_btn"
+                        android:layout_toLeftOf="@+id/query_stock_find_btn"
+                        android:text="扫" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toLeftOf="@+id/query_stock_scan_btn"
+                        android:background="@drawable/set_et_bj" >
+
+                        <Button
+                            android:id="@+id/query_stock_select_btn"
+                            style="@style/arrow_down_btn" />
+
+                        <EditText
+                            android:id="@+id/query_stock_rfid_et"
+                            style="@style/default_et"
+                            android:layout_toLeftOf="@+id/query_stock_select_btn" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_hight"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/default_tv_70"
+                    android:text="物料号：" />
+
+                <EditText
+                    android:id="@+id/query_stock_material_et"
+                    style="@style/default_tv_bj" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_hight"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/default_tv_70"
+                    android:text="工厂：" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/set_et_bj" >
+
+                    <Button
+                        android:id="@+id/query_stock_factory_btn"
+                        style="@style/arrow_down_btn" />
+
+                    <EditText
+                        android:id="@+id/query_stock_factory_et"
+                        style="@style/default_et"
+                        android:layout_toLeftOf="@+id/query_stock_factory_btn" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_hight"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/default_tv_70"
+                    android:text="库存：" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/set_et_bj" >
+
+                    <Button
+                        android:id="@+id/query_stock_store_location_btn"
+                        style="@style/arrow_down_btn" />
+
+                    <EditText
+                        android:id="@+id/query_stock_store_location_et"
+                        style="@style/default_et"
+                        android:layout_toLeftOf="@+id/query_stock_store_location_btn" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_hight"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/default_tv_70"
+                    android:text="物料描述：" />
+
+                <EditText
+                    android:id="@+id/query_stock_material_desp_et"
+                    style="@style/default_tv_bj" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_hight"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/default_tv_70"
+                    android:text="单位：" />
+                
+                 <TextView
+                    android:id="@+id/query_stock_store_unit_et"
+                    style="@style/default_tv_bj" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_hight"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/default_tv_100"
+                    android:text="非限估计库存：" />
+
+                <EditText
+                    android:id="@+id/query_stock_fxgjkc_et"
+                    style="@style/default_tv_bj" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_hight"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/default_tv_100"
+                    android:text="限制寄售库存：" />
+
+                <EditText
+                    android:id="@+id/query_stock_xzjskc_et"
+                    style="@style/default_tv_bj" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_hight"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/default_tv_100"
+                    android:text="总计库存：" />
+
+                <EditText
+                    android:id="@+id/query_stock_total_store_et"
+                    style="@style/default_tv_bj" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_hight"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/default_tv_100"
+                    android:text="非限寄售库存：" />
+
+                <EditText
+                    android:id="@+id/query_stock_fxjskc_et"
+                    style="@style/default_tv_bj" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_hight"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/default_tv_70"
+                    android:text="仓位：" />
+
+                <EditText
+                    android:id="@+id/query_stock_cw_et"
+                    style="@style/default_tv_bj" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_hight"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/default_tv_70"
+                    android:text="项目库存：" />
+
+                <EditText
+                    android:id="@+id/query_stock_xmcw_et"
+                    style="@style/default_tv_bj" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

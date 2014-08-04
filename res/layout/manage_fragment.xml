@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/manage_tv_bj"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/manage_material_find"
+                style="@style/manage_text"
+                android:drawableRight="@drawable/arrow_right"
+                android:drawableLeft="@drawable/wlcx"
+                android:text="物料查询" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/manage_line" />
+
+            <TextView
+                android:id="@+id/manage_rfid_find"
+                style="@style/manage_text"
+                 android:drawableRight="@drawable/arrow_right"
+                android:drawableLeft="@drawable/rfidcx"
+                android:text="标签查询" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/manage_line" />
+
+            <TextView
+                android:id="@+id/manage_out_in_store_find"
+                style="@style/manage_text"
+                android:drawableLeft="@drawable/crkcx"
+                 android:drawableRight="@drawable/arrow_right"
+                android:text="出入库查询" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/manage_line" />
+
+            <TextView
+                android:id="@+id/manage_operation_find"
+                style="@style/manage_text"
+                android:drawableRight="@drawable/arrow_right"
+                android:drawableLeft="@drawable/czrzcx"
+                android:text="操作日志查询" />
+        </LinearLayout>
+
+        <!-- <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/manage_tv_bj"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/manage_check"
+                style="@style/manage_text"
+                android:drawableRight="@drawable/arrow_right"
+                android:drawableLeft="@drawable/pd"
+                android:visibility="gone"
+                android:text="盘点" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:visibility="gone"
+                android:background="@drawable/manage_line" />
+
+            <TextView
+                android:id="@+id/manage_hand_init"
+                style="@style/manage_text"
+                android:drawableRight="@drawable/arrow_right"
+                android:drawableLeft="@drawable/sdcsh"
+                android:text="手工初始化" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/manage_line" />
+
+            <TextView
+                android:id="@+id/manage_temp_rfid_update"
+                style="@style/manage_text"
+                android:drawableRight="@drawable/arrow_right"
+                android:drawableLeft="@drawable/lsgxrfid"
+                android:text="临时标签更新" />
+        </LinearLayout> -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/manage_tv_bj"
+            android:orientation="vertical" >
+            
+             <TextView
+                android:id="@+id/manage_temp_rfid_update"
+                style="@style/manage_text"
+                android:drawableRight="@drawable/arrow_right"
+                android:drawableLeft="@drawable/lsgxrfid"
+                android:text="标签更新" />
+             
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/manage_line" />
+
+            <TextView
+                android:id="@+id/manage_card_245"
+                style="@style/manage_text"
+                android:drawableRight="@drawable/arrow_right"
+                android:drawableLeft="@drawable/kpesw"
+                android:text="卡片二四五" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/manage_line" />
+
+            <TextView
+                android:id="@+id/manage_card_13"
+                style="@style/manage_text"
+                android:drawableRight="@drawable/arrow_right"
+                android:drawableLeft="@drawable/jkyes"
+                android:text="旧卡" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/manage_tv_bj"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/manage_about_system"
+                style="@style/manage_text"
+                android:layout_width="fill_parent"
+                android:drawableRight="@drawable/arrow_right"
+                android:drawableLeft="@drawable/gyxt"
+                android:text="关于我们" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/manage_exit"
+            style="@style/red_btn"
+            android:layout_margin="10dp"
+            android:text="退出" />
+    </LinearLayout>
+
+</ScrollView>

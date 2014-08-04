@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_hight"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/default_tv_70"
+            android:text="事物代码：" />
+
+        <TextView
+            android:id="@+id/base_enter_info_thing_code_tv"
+            style="@style/default_tv_bj" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_hight"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/base_enter_info_proof_date_tv"
+            style="@style/default_tv_70"
+            android:text="凭证日期：" />
+
+        <RelativeLayout style="@style/default_relative_bj" >
+
+            <Button
+                android:id="@+id/base_enter_info_proof_date_btn"
+                style="@style/arrow_down_btn" />
+
+            <EditText
+                android:id="@+id/base_enter_info_proof_date_et"
+                style="@style/default_et"
+                android:layout_toLeftOf="@+id/base_enter_info_proof_date_btn"
+                android:inputType="date" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_hight"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/base_enter_info_account_date_tv"
+            style="@style/default_tv_70"
+            android:text="记账日期：" />
+
+        <RelativeLayout style="@style/default_relative_bj" >
+
+            <Button
+                android:id="@+id/base_enter_info_account_date_btn"
+                style="@style/arrow_down_btn" />
+
+            <EditText
+                android:id="@+id/base_enter_info_account_date_et"
+                style="@style/default_et"
+                android:layout_toLeftOf="@+id/base_enter_info_account_date_btn"
+                android:inputType="date" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/base_enter_external_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/default_hight"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/base_enter_info_order_tv"
+                style="@style/default_tv_70"
+                android:text="订单号：" />
+
+            <RelativeLayout style="@style/default_relative_bj" >
+
+                <Button
+                    android:id="@+id/base_enter_info_order_btn"
+                    style="@style/right_btn"
+                    android:text="查"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/base_enter_info_order_et"
+                    style="@style/default_et"
+                    android:layout_toLeftOf="@+id/base_enter_info_order_btn" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/default_hight"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/base_enter_info_supplier_tv"
+                style="@style/default_tv_70"
+                android:text="供应商：" />
+
+            <EditText
+                android:id="@+id/base_enter_info_supplier_et"
+                style="@style/default_tv_bj" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/base_enter_interior_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/default_hight"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/default_tv_70"
+                android:text="移动类型：" />
+
+            <EditText
+                android:id="@+id/base_enter_info_move_type_et"
+                style="@style/default_tv_bj" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/default_hight"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/default_tv_70"
+                android:text="工厂：" />
+
+            <RelativeLayout style="@style/default_relative_bj" >
+
+                <Button
+                    android:id="@+id/base_enter_info_factory_btn"
+                    style="@style/arrow_down_btn" />
+
+                <EditText
+                    android:id="@+id/base_enter_info_factory_et"
+                    style="@style/default_et"
+                    android:layout_toLeftOf="@+id/base_enter_info_factory_btn" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/default_hight"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/default_tv_70"
+                android:text="库存地点：" />
+
+            <RelativeLayout style="@style/default_relative_bj" >
+
+                <Button
+                    android:id="@+id/base_enter_info_store_loction_date_btn"
+                    style="@style/arrow_down_btn" />
+
+                <EditText
+                    android:id="@+id/base_enter_info_store_loction_date_et"
+                    style="@style/default_et"
+                    android:layout_toLeftOf="@+id/base_enter_info_store_loction_date_btn" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/default_hight"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/default_tv_70"
+                android:text="成本中心：" />
+
+            <RelativeLayout style="@style/default_relative_bj" >
+
+                <Button
+                    android:id="@+id/base_enter_info_cbzx_btn"
+                    style="@style/arrow_down_btn" />
+
+                <EditText
+                    android:id="@+id/base_enter_info_cbzx_et"
+                    style="@style/default_et"
+                    android:layout_toLeftOf="@+id/base_enter_info_cbzx_btn" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/base_enter_info_save_btn"
+        style="@style/red_btn"
+        android:text="保存" />
+
+</LinearLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/top_title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#CCCCCC" >
+
+        <TextView
+            android:id="@+id/temp_cw_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_vertical"
+            android:text="订单号："
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/temp_rfid_cw_et"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@+id/temp_cw_tv"
+            android:background="@drawable/main_input_bg"
+            android:paddingLeft="8dp"
+            android:singleLine="true" />
+
+        <Button
+            android:id="@+id/temp_rfid_search_btn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignRight="@+id/temp_rfid_cw_et"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/message_search"
+            android:onClick="onClick" />
+    </RelativeLayout>
+    
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_dark" />
+
+    <RelativeLayout
+        android:id="@+id/rfid_layout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#CCCCCC" >
+
+        <Button
+            android:id="@+id/equip_list_new_btn"
+            style="@style/right_btn"
+            android:text="新"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_toLeftOf="@+id/equip_list_new_btn" >
+
+            <Button
+                android:id="@+id/equip_list_search_btn"
+                style="@style/right_btn"
+                android:text="新" />
+
+            <TextView
+                android:id="@+id/equip_list_rfid_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:gravity="center_vertical"
+                android:text="标签号："
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/equip_list_rfid_et"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_margin="5dp"
+                android:layout_toLeftOf="@+id/equip_list_search_btn"
+                android:layout_toRightOf="@+id/equip_list_rfid_tv"
+                android:background="@drawable/main_input_bg"
+                android:paddingLeft="5dp"
+                android:singleLine="true" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

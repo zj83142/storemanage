@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/good_item_bj"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/goods_item_select"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/check_none" />
+
+        <Button
+            android:id="@+id/goods_item_detail"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/arrow_right" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/goods_item_detail"
+            android:layout_toRightOf="@+id/goods_item_select"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/goods_item_content_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/goods_item_material_num"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="物料号："
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/goods_item_factory"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="工厂："
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/goods_item_location"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="库位："
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/goods_item_order_num"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="采购数量："
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="35dp" >
+
+                <TextView
+                    android:id="@+id/goods_num_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="数量："
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/goods_item_unit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center_horizontal|bottom"
+                    android:minWidth="40dp"
+                    android:text="台"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/goods_item_num_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@+id/goods_item_unit"
+                    android:layout_toRightOf="@+id/goods_num_tv"
+                    android:gravity="center"
+                    android:inputType="numberDecimal"
+                    android:text="12"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

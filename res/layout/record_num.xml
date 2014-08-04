@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/top_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/show_account_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_hight"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/default_tv_70"
+                        android:text="总数量：" />
+
+                    <TextView
+                        android:id="@+id/total_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/red" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/default_tv_70"
+                        android:text="当前数量：" />
+
+                    <TextView
+                        android:id="@+id/current_num_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/red" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_hight"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/default_tv_70"
+                        android:text="当前记录：" />
+
+                    <TextView
+                        android:id="@+id/record_current_num_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/red" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/default_tv_70"
+                        android:text="总记录：" />
+
+                    <TextView
+                        android:id="@+id/record_total_num_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/red" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/show_line_view"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/gray_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_hight"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/default_tv_70"
+                    android:text="标签：" />
+
+                <TextView
+                    android:id="@+id/record_rfid_tv"
+                    style="@style/default_tv_bj" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_hight"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/default_tv_70"
+                    android:text="物料号：" />
+
+                <TextView
+                    android:id="@+id/record_matrial_tv"
+                    style="@style/default_tv_bj" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_hight"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/default_tv_70"
+                    android:text="描述：" />
+
+                <TextView
+                    android:id="@+id/record_desp_tv"
+                    style="@style/default_tv_bj" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_hight"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/default_tv_70"
+                    android:text="数量：" />
+
+                <EditText
+                    android:id="@+id/record_number_et"
+                    style="@style/default_tv_bj"
+                    android:inputType="number"
+                    android:hint="0" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_hight"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/default_tv_70"
+                    android:text="单位：" />
+
+                <TextView
+                    android:id="@+id/record_unit_tv"
+                    style="@style/default_tv_bj" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_hight"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/default_tv_70"
+                    android:text="工厂：" />
+
+                <TextView
+                    android:id="@+id/record_factory_tv"
+                    style="@style/default_tv_bj" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_hight"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/default_tv_70"
+                    android:text="库位：" />
+
+                <TextView
+                    android:id="@+id/record_storage_location_tv"
+                    style="@style/default_tv_bj" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/record_save_btn"
+                style="@style/red_btn"
+                android:text="保存" />
+
+            <Button
+                android:id="@+id/record_find_store_btn"
+                style="@style/blue_btn"
+                android:text="查库存" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

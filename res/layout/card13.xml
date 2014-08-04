@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/top_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/default_hight" >
+
+                    <CheckBox
+                        android:id="@+id/card13_project"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text="工程"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/card13_matrail_num_tv"
+                        style="@style/default_tv_50"
+                        android:text="物料号:" />
+                    
+                    <com.zj.storemanag.view.custom_autotv.AutoTipTextView
+                        android:id="@+id/card13_matrail_num_et"
+                        style="@style/default_tv_bj"
+                        android:inputType="number"
+                        android:textSize="14sp"
+                        android:layout_toLeftOf="@+id/card13_project"
+                        android:layout_toRightOf="@+id/card13_matrail_num_tv" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/default_hight" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" >
+
+                        <TextView
+                            style="@style/default_tv_50"
+                            android:text="工厂 :" />
+
+                        <EditText
+                            android:id="@+id/card13_factory_et"
+                            android:inputType="number"
+                            android:textSize="14sp"
+                            style="@style/default_tv_bj" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" >
+
+                        <TextView
+                            android:id="@+id/card13_store_tv"
+                            style="@style/default_tv_50"
+                            android:text="库位:" />
+
+                        <Button
+                            android:id="@+id/card13_find_btn"
+                            style="@style/right_btn"
+                            android:text="查"
+                            android:textColor="@color/black" />
+
+                        <EditText
+                            android:id="@+id/card13_store_et"
+                            style="@style/default_tv_bj"
+                            android:inputType="number"
+                            android:textSize="14sp"
+                            android:layout_toLeftOf="@+id/card13_find_btn"
+                            android:layout_toRightOf="@+id/card13_store_tv" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/gray_line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/default_hight"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2" >
+
+                        <TextView
+                            style="@style/default_tv_70"
+                            android:text="仓位号 :" />
+
+                        <com.zj.storemanag.view.custom_autotv.AutoTipTextView
+                            android:id="@+id/card13_cw_num_et"
+                            android:textSize="14sp"
+                            android:maxLength="10"
+                            style="@style/default_tv_bj" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3" >
+
+                        <TextView
+                            style="@style/default_tv_50"
+                            android:text="单位 :" />
+
+                        <TextView
+                            android:id="@+id/card13_unit_et"
+                            style="@style/default_tv_bj" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/default_hight"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/default_tv_70"
+                        android:text="物料描述 :" />
+
+                    <TextView
+                        android:id="@+id/card13_matrail_desp_et"
+                        style="@style/default_tv_bj" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/default_hight" >
+
+                    <RelativeLayout
+                        android:id="@+id/card13_jc_layout"
+                        android:layout_width="140dp"
+                        android:layout_height="@dimen/default_hight"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/set_et_bj" >
+
+                        <Button
+                            android:id="@+id/card13_date_btn"
+                            style="@style/arrow_down_btn" />
+
+                        <TextView
+                            android:id="@+id/card13_date_et"
+                            style="@style/default_et"
+                            android:layout_toLeftOf="@+id/card13_date_btn" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/default_hight"
+                        android:layout_marginRight="5dp"
+                        android:layout_toLeftOf="@+id/card13_jc_layout"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/card13_change_tv"
+                            style="@style/default_tv_70"
+                            android:text="属性:" />
+
+                        <TextView
+                            android:id="@+id/card13_params_et"
+                            style="@style/default_tv_bj" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/card1_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/default_hight"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/default_hight"
+                        android:layout_weight="1"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/card13_zgkc_tv"
+                            style="@style/default_tv_70"
+                            android:text="最高库存:" />
+
+                        <TextView
+                            android:id="@+id/card13_zgkc_et"
+                            style="@style/default_tv_bj" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/default_hight"
+                        android:layout_weight="1"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            style="@style/default_tv_70"
+                            android:text="最低库存 :" />
+
+                        <TextView
+                            android:id="@+id/card13_zdkc_et"
+                            style="@style/default_tv_bj" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/card3_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/default_hight"
+                    android:orientation="horizontal"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/card1_project_name"
+                        style="@style/default_tv_70"
+                        android:text="项目名称:" />
+
+                    <TextView
+                        android:id="@+id/card1_project_name_et"
+                        style="@style/default_tv_bj" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/default_hight"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/default_hight"
+                        android:layout_weight="1"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            style="@style/default_tv_70"
+                            android:text="标准价:" />
+
+                        <TextView
+                            android:id="@+id/card13_bzj_et"
+                            style="@style/default_tv_bj" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/default_hight"
+                        android:layout_weight="1"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            style="@style/default_tv_70"
+                            android:text="数量 :" />
+
+                        <TextView
+                            android:id="@+id/card13_num_et"
+                            style="@style/default_tv_bj" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/default_hight"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/default_tv_70"
+                        android:text="使用单位:" />
+
+                    <TextView
+                        android:id="@+id/card13_use_unit_et"
+                        style="@style/default_tv_bj" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/default_hight"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/default_tv_70"
+                        android:text="供应商:" />
+
+                    <TextView
+                        android:id="@+id/card13_supper_et"
+                        style="@style/default_tv_bj" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/default_hight" >
+
+                   <!--  <Button
+                        android:id="@+id/card13_rfid_scan_btn"
+                        style="@style/right_btn"
+                        android:text="扫" /> -->
+
+                    <TextView
+                        android:id="@+id/card13_rfid_tv"
+                        style="@style/default_tv"
+                        android:text="标签: " />
+
+                    <TextView
+                        android:id="@+id/card13_rfid_et"
+                        style="@style/default_tv_bj"
+                        android:layout_toRightOf="@+id/card13_rfid_tv" />
+
+                   <!--  <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toLeftOf="@+id/card13_rfid_scan_btn"
+                        android:layout_toRightOf="@+id/card13_rfid_tv"
+                        android:background="@drawable/set_et_bj" >
+
+                        <Button
+                            android:id="@+id/card13_rfid_btn"
+                            style="@style/arrow_down_btn"
+                            android:visibility="gone" />
+                    </RelativeLayout> -->
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/card13_confirm_btn"
+                        style="@style/red_btn"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:text="确定"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/card13_print_btn"
+                        style="@style/red_btn"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:text="打印" />
+
+                    <Button
+                        android:id="@+id/card13_udpate_rfid_btn"
+                        style="@style/red_btn"
+                        android:layout_weight="1"
+                        android:text="改标签" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">库存管理</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_str">杭钢库存管理系统</string>
+    <!-- 登录 -->
+    <string name="username_str">用户名</string>
+    <string name="pwd_str">密&#160;&#160;&#160;码</string>
+    <string name="login_str">登录</string>
+    <string name="exit_str">退出</string>
+    <string name="setting_str">设置</string>
+
+    <!-- 设置界面 -->
+    <string name="service_address_str">服务地址:</string>
+    <string name="default_loginname_str">默认登录名：</string>
+    <string name="save_str">保存</string>
+    <string name="close_str">关闭</string>
+    <string name="cache_update_date">上次缓存更新时间：</string>
+    <string name="clear_cache_factory">清除工厂库位缓存</string>
+    <string name="open_wifi">设置无线网络</string>
+    <string name="wifi_state_tip">wifi已经打开</string>
+    <string name="cancel_str">取消</string>
+    <string name="confirm_str">确定</string>
+
+    <!-- 主界面 -->
+    <string name="out_store">出库</string>
+    <string name="enter_store">入库</string>
+    <string name="system_manage">系统管理</string>
+    <string name="net_error_tip">网络连接错误，请检查网络连接！</string>
+
+    <!-- 自定义键盘 -->
+    <string name="key_1">1</string>
+    <string name="key_2">2</string>
+    <string name="key_3">3</string>
+    <string name="key_4">4</string>
+    <string name="key_5">5</string>
+    <string name="key_6">6</string>
+    <string name="key_7">7</string>
+    <string name="key_8">8</string>
+    <string name="key_9">9</string>
+    <string name="key_0">0</string>
+    <string name="key_point">.</string>
+    <string name="key_minus">-</string>
+    <string name="key_ok">确定</string>
+    <string name="key_cancel">取消</string>
+    <string name="key_del">删除</string>
+    <string name="key_c">清空</string>
+
+</resources>

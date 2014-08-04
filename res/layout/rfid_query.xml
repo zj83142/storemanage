@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/top_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <com.zj.storemanag.view.NetImageView
+                android:id="@+id/material_img"
+                android:layout_width="fill_parent"
+                android:layout_height="240dp"
+                android:src="@drawable/img_load"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/rfid_query_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_hight"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/default_tv_80"
+                    android:text="标签：" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <Button
+                        android:id="@+id/rfid_query_find_btn"
+                        style="@style/right_btn"
+                        android:text="查" />
+
+                    <EditText
+                        android:id="@+id/rfid_query_et"
+                        style="@style/default_tv_bj"
+                        android:layout_toLeftOf="@+id/rfid_query_find_btn"
+                        android:textSize="13sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_hight"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/default_tv_80"
+                    android:text="物料号：" />
+
+                <TextView
+                    android:id="@+id/rfid_query_material_et"
+                    style="@style/default_tv_bj" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_hight"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/default_tv_80"
+                    android:text="工厂：" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/set_et_bj" >
+
+                    <Button
+                        android:id="@+id/rfid_query_factory_btn"
+                        style="@style/arrow_down_btn"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/rfid_query_factory_et"
+                        style="@style/default_et"
+                        android:layout_toLeftOf="@+id/rfid_query_factory_btn" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_hight"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/default_tv_80"
+                    android:text="库位：" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/set_et_bj" >
+
+                    <Button
+                        android:id="@+id/rfid_query_store_location_btn"
+                        style="@style/arrow_down_btn"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/rfid_query_store_location_et"
+                        style="@style/default_et"
+                        android:layout_toLeftOf="@+id/rfid_query_store_location_btn" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_hight"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/default_tv_80"
+                    android:text="物料描述：" />
+
+                <TextView
+                    android:id="@+id/rfid_query_material_desp_et"
+                    style="@style/default_tv_bj" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_hight"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/default_tv_80"
+                    android:text="单位：" />
+
+                <TextView
+                    android:id="@+id/rfid_query_store_unit_et"
+                    style="@style/default_tv_bj" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_hight"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/default_tv_80"
+                    android:text="仓位：" />
+
+                <TextView
+                    android:id="@+id/rfid_query_cw_et"
+                    style="@style/default_tv_bj" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_hight"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/default_tv_130"
+                    android:text="非限估计库存：" />
+
+                <TextView
+                    android:id="@+id/rfid_query_fxgjkc_et"
+                    style="@style/default_tv_bj" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_hight"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/default_tv_130"
+                    android:text="供应商寄售库存：" />
+
+                <TextView
+                    android:id="@+id/rfid_query_xzjskc_et"
+                    style="@style/default_tv_bj" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_hight"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/default_tv_130"
+                    android:text="总计库存：" />
+
+                <TextView
+                    android:id="@+id/rfid_query_total_store_et"
+                    style="@style/default_tv_bj" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_hight"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <TextView
+                    style="@style/default_tv_130"
+                    android:text="非限寄售库存：" />
+
+                <TextView
+                    android:id="@+id/rfid_query_fxjskc_et"
+                    style="@style/default_tv_bj" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_hight"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/default_tv_130"
+                    android:text="项目库存：" />
+
+                <TextView
+                    android:id="@+id/rfid_query_xmcw_et"
+                    style="@style/default_tv_bj" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

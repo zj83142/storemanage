@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/blue_dark"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/top_back_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:onClick="onClick"
+        android:background="@drawable/back_btn_e" />
+    
+      <Button
+        android:id="@+id/top_right_btn"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:textColor="@color/white"
+        android:text="新增"
+        android:onClick="onClick"
+        android:visibility="gone"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/btn_a" />
+
+    <TextView
+        android:id="@+id/top_title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="外部备件入库"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="3dp"
+        android:background="@drawable/login_line" />
+
+</RelativeLayout>

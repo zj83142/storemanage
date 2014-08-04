@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/default_hight"
+    android:orientation="horizontal"
+    android:paddingBottom="8dp"
+    android:paddingTop="8dp" >
+
+    <TextView
+        android:id="@+id/store_item_materail"
+        android:layout_width="130dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/store_item_desp"
+        android:layout_width="130dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/store_item_fxgjkc"
+        android:layout_width="130dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/store_item_xzzjkc"
+        android:layout_width="130dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/store_item_xzjskc"
+        android:layout_width="130dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/store_item_unit"
+        android:layout_width="130dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/store_item_factory"
+        android:layout_width="130dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/store_item_store"
+        android:layout_width="130dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/store_item_cw"
+        android:layout_width="130dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textColor="@color/black" />
+
+</LinearLayout>

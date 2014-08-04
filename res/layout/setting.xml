@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/default_bj"
+    android:orientation="vertical" >
+
+    <include layout="@layout/top_title" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical" >
+
+        <TextView
+            style="@style/text_common_single"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="@string/service_address_str" />
+
+        <EditText
+            android:id="@+id/set_service_address_et"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/set_et_bj"
+            android:gravity="top"
+            android:minLines="3" />
+
+        <TextView
+            style="@style/text_common_single"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="@string/default_loginname_str" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/default_hight"
+            android:layout_margin="5dp"
+            android:background="@drawable/set_et_bj" >
+
+            <Button
+                android:id="@+id/set_default_username_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/arrow_down"
+                android:onClick="onClick" />
+
+            <EditText
+                android:id="@+id/set_default_login_name_et"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/default_hight"
+                android:layout_toLeftOf="@+id/set_default_username_btn"
+                android:background="@drawable/transparent"
+                android:paddingLeft="8dp"
+                android:singleLine="true" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/set_save_btn"
+            style="@style/red_btn"
+            android:layout_margin="5dp"
+            android:text="@string/save_str" />
+
+        <TextView
+            style="@style/text_common_single"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="@string/cache_update_date" />
+
+        <TextView
+            android:id="@+id/set_cache_update_date_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:singleLine="true" />
+
+        <Button
+            android:id="@+id/set_clear_cache_factory_btn"
+            style="@style/blue_btn"
+            android:layout_margin="5dp"
+            android:text="@string/clear_cache_factory" />
+
+        <Button
+            android:id="@+id/set_open_wifi_btn"
+            style="@style/blue_btn"
+            android:layout_margin="5dp"
+            android:text="@string/open_wifi" />
+    </LinearLayout>
+
+</LinearLayout>

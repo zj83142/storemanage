@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/default_hight"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/factory_tv"
+                style="@style/default_tv_80"
+                android:text="接收工厂：" />
+
+            <RelativeLayout style="@style/default_relative_bj" >
+
+                <Button
+                    android:id="@+id/factory_btn"
+                    style="@style/arrow_down_btn" />
+
+                <com.zj.storemanag.view.custom_autotv.AutoTipTextView
+                    android:id="@+id/factory_et"
+                    style="@style/myAutoCompleteTv"
+                    android:layout_toLeftOf="@+id/factory_btn" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/default_hight"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/store_tv"
+                style="@style/default_tv_80"
+                android:text="接收库位：" />
+
+            <RelativeLayout style="@style/default_relative_bj" >
+
+                <Button
+                    android:id="@+id/store_btn"
+                    style="@style/arrow_down_btn" />
+
+                <com.zj.storemanag.view.custom_autotv.AutoTipTextView
+                    android:id="@+id/store_et"
+                    style="@style/myAutoCompleteTv"
+                    android:layout_toLeftOf="@+id/store_btn" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

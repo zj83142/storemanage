@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rfid_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_hight" >
+
+        <Button
+            android:id="@+id/add_btn"
+            style="@style/right_btn"
+            android:text="新"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/rfid_tv"
+            style="@style/default_tv"
+            android:text="标签: " />
+
+        <EditText
+            android:id="@+id/rfid_et"
+            style="@style/default_tv_bj"
+            android:layout_toLeftOf="@+id/add_btn"
+            android:layout_toRightOf="@+id/rfid_tv"
+            android:maxLength="32"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <include
+            android:id="@+id/top_layout"
+            layout="@layout/top_title" />
+
+        <!-- 基础信息 -->
+
+        <LinearLayout
+            android:id="@+id/bottom_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/gray"
+            android:orientation="vertical" >
+
+            <com.zj.storemanag.activity.inorout.BaseInfoView
+                android:id="@+id/baseinfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/save_btn"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_hight"
+                android:background="@drawable/rad_btn"
+                android:onClick="onClick"
+                android:text="保存"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <!-- 设备明细 -->
+
+        <LinearLayout
+            android:id="@+id/order_search_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/default_hight"
+            android:layout_below="@+id/top_layout"
+            android:layout_margin="5dp"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/order_search_title_tv"
+                style="@style/default_tv_80"
+                android:paddingLeft="5dp"
+                android:text="维修订单:" />
+
+            <RelativeLayout style="@style/default_relative_bj" >
+
+                <Button
+                    android:id="@+id/order_search_btn"
+                    style="@style/right_btn"
+                    android:text="查"
+                    android:textColor="@color/black" />
+
+                <com.zj.storemanag.view.custom_autotv.AutoTipTextView
+                    android:id="@+id/order_search_et"
+                    style="@style/myAutoCompleteTv"
+                    android:layout_toLeftOf="@+id/order_search_btn" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/bottom_layout"
+            android:layout_below="@+id/order_search_layout"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="320dp"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:background="@color/gray_dark"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="物料号"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:layout_width="90dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="数量"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="单位"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:gravity="center"
+                        android:text="工厂"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:gravity="center"
+                        android:text="库位"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:gravity="center"
+                        android:text="物料描述"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/equip_listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:cacheColorHint="#00000000"
+                    android:divider="@drawable/gray_line"
+                    android:fadingEdge="none"
+                    android:scrollbars="none" >
+                </ListView>
+            </LinearLayout>
+        </HorizontalScrollView>
+    </RelativeLayout>
+
+    <com.zj.storemanag.view.CustomKeyboardView
+        android:id="@+id/layout_custom_keyboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:visibility="gone" />
+
+</FrameLayout>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/top_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/default_hight"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/detail_info_find_btn"
+                style="@style/right_btn"
+                android:visibility="gone"
+                android:text="查" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_hight"
+                android:layout_toLeftOf="@+id/detail_info_find_btn"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/default_tv_70"
+                    android:text="物料号：" />
+
+                <TextView
+                    android:id="@+id/initrfid_material_tv"
+                    style="@style/default_tv_bj" />
+                <EditText
+                    android:id="@+id/initrfid_material_et"
+                    style="@style/default_tv_bj"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/default_hight"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/default_tv_70"
+                android:text="工厂：" />
+
+            <RelativeLayout style="@style/default_relative_bj" >
+
+                <Button
+                    android:id="@+id/initrfid_factory_btn"
+                    style="@style/arrow_down_btn" />
+
+                <TextView
+                    android:id="@+id/initrfid_factory_et"
+                    style="@style/default_et"
+                    android:layout_toLeftOf="@+id/initrfid_factory_btn" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/default_hight"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/default_tv_70"
+                android:text="库位：" />
+
+            <RelativeLayout style="@style/default_relative_bj" >
+
+                <Button
+                    android:id="@+id/initrfid_storage_location_btn"
+                    style="@style/arrow_down_btn" />
+
+                <TextView
+                    android:id="@+id/initrfid_storage_location_et"
+                    style="@style/default_et"
+                    android:layout_toLeftOf="@+id/initrfid_storage_location_btn" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/default_hight"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/default_tv_70"
+                android:text="物料描述：" />
+
+            <EditText
+                android:id="@+id/initrfid_material_desp_et"
+                style="@style/default_tv_bj" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/default_hight"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/default_tv_70"
+                android:text="单位：" />
+
+            <TextView
+                android:id="@+id/initrfid_unit_et"
+                style="@style/default_tv_bj" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/default_hight"
+            android:layout_marginTop="30dp" >
+
+            <Button
+                android:id="@+id/initrfid_scan_btn"
+                style="@style/right_btn"
+                android:text="扫"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/initrfid_tv"
+                style="@style/default_tv_70"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="标签:" />
+
+            <RelativeLayout
+                style="@style/default_relative_bj"
+                android:layout_toLeftOf="@+id/initrfid_scan_btn"
+                android:layout_toRightOf="@+id/initrfid_tv" >
+
+                <Button
+                    android:id="@+id/detail_info_rfid_btn"
+                    style="@style/arrow_down_btn"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/initrfid_et"
+                    style="@style/default_et"
+                    android:layout_toLeftOf="@+id/detail_info_rfid_btn" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/initrfid_temp_btn"
+            style="@style/red_btn"
+            android:text="临时标签" />
+
+        <Button
+            android:id="@+id/initrfid_save_btn"
+            style="@style/red_btn"
+            android:text="保存" />
+    </LinearLayout>
+
+</LinearLayout>

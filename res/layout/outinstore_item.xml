@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/default_hight"
+    android:orientation="horizontal"
+    android:paddingBottom="8dp"
+    android:paddingTop="8dp" >
+
+    <TextView
+        android:id="@+id/inout_store_item_marterail"
+        android:layout_width="130dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/inout_store_item_desp"
+        android:layout_width="130dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/inout_store_item_number"
+        android:layout_width="130dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/inout_store_item_factory"
+        android:layout_width="130dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/inout_store_item_store"
+        android:layout_width="130dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/inout_store_item_money"
+        android:layout_width="130dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/inout_store_item_pzdate"
+        android:layout_width="130dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/inout_store_item_jzdate"
+        android:layout_width="130dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/inout_store_item_wlpz"
+        android:layout_width="130dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/inout_store_item_cgdd"
+        android:layout_width="130dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/inout_store_item_ydlx"
+        android:layout_width="130dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/inout_store_item_cbzx"
+        android:layout_width="130dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/inout_store_item_tskc"
+        android:layout_width="130dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/inout_store_item_wbs"
+        android:layout_width="130dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/inout_store_item_ddh"
+        android:layout_width="130dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textColor="@color/black" />
+
+</LinearLayout>

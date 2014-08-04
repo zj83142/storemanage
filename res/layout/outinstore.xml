@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/top_title" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_hight"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/default_tv_80"
+                    android:text="开始时间：" />
+
+                <RelativeLayout style="@style/default_relative_bj" >
+
+                    <Button
+                        android:id="@+id/outin_star_time_btn"
+                        style="@style/arrow_down_btn" />
+
+                    <TextView
+                        android:id="@+id/outin_star_time_et"
+                        style="@style/default_et"
+                        android:layout_toLeftOf="@+id/outin_star_time_btn" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_hight"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/default_tv_80"
+                    android:text="结束时间：" />
+
+                <RelativeLayout style="@style/default_relative_bj" >
+
+                    <Button
+                        android:id="@+id/outin_end_time_btn"
+                        style="@style/arrow_down_btn" />
+
+                    <TextView
+                        android:id="@+id/outin_end_time_et"
+                        style="@style/default_et"
+                        android:layout_toLeftOf="@+id/outin_end_time_btn" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_hight"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/default_tv_80"
+                    android:text="物料号：" />
+
+                <EditText
+                    android:id="@+id/outin_material_et"
+                    style="@style/default_tv_bj"
+                    android:inputType="number" />
+            </LinearLayout>
+
+            <com.zj.storemanag.view.custom_autotv.FactoryStoreView
+                android:id="@+id/factorystoreview"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_hight"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/default_tv_80"
+                    android:text="供应商：" />
+
+                <EditText
+                    android:id="@+id/outin_supplier_et"
+                    style="@style/default_tv_bj" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_hight"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/default_tv_80"
+                    android:text="客户：" />
+
+                <EditText
+                    android:id="@+id/outin_custorm_et"
+                    style="@style/default_tv_bj"
+                    android:inputType="number" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_hight"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/default_tv_80"
+                    android:text="移动类型：" />
+
+                <EditText
+                    android:id="@+id/outin_move_type_et"
+                    style="@style/default_tv_bj"
+                    android:inputType="number" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_hight"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/default_tv_80"
+                    android:text="特殊库存：" />
+
+                <EditText
+                    android:id="@+id/outin_special_et"
+                    style="@style/default_tv_bj" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/outin_query_btn"
+                style="@style/red_btn"
+                android:text="查询" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

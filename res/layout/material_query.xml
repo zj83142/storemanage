@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/top_title" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:id="@+id/search_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp" >
+
+                <TextView
+                    android:id="@+id/material_num_tv"
+                    style="@style/default_tv"
+                    android:text="物料号" />
+
+                <Button
+                    android:id="@+id/material_find_btn"
+                    style="@style/right_btn"
+                    android:text="查"
+                    android:textColor="@color/black" />
+
+                <com.zj.storemanag.view.custom_autotv.AutoTipTextView
+                    android:id="@+id/material_num_et"
+                    style="@style/default_tv_bj"
+                    android:layout_toLeftOf="@+id/material_find_btn"
+                    android:layout_toRightOf="@+id/material_num_tv"
+                    android:inputType="number" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/acount_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/default_hight"
+            android:layout_alignParentBottom="true"
+            android:background="@color/blue">
+            
+            <TextView
+            android:id="@+id/acount_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:text="库存：0"
+            android:layout_marginLeft="5dp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+            
+            <TextView
+            android:id="@+id/acount_js_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="寄售库存：0"
+            android:layout_marginRight="5dp"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+        </RelativeLayout>
+
+        
+
+        <HorizontalScrollView
+            android:id="@+id/list_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/acount_layout"
+            android:layout_below="@+id/search_layout" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/default_hight"
+                    android:background="@color/gray_dark"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="130dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="物料编号"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:layout_width="130dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="物料描述"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:layout_width="130dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="非限库存"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:layout_width="130dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="限制总计库存"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:layout_width="130dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="供应商寄售库存"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:layout_width="130dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="单位"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:layout_width="130dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="工厂"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:layout_width="130dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="库位"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:layout_width="130dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="仓位"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/material_query_listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:cacheColorHint="#00000000"
+                    android:divider="@drawable/gray_line"
+                    android:fadingEdge="none"
+                    android:scrollbars="none" />
+            </LinearLayout>
+        </HorizontalScrollView>
+    </RelativeLayout>
+
+</LinearLayout>

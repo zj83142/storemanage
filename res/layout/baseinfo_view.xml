@@ -1,0 +1,640 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <com.zj.storemanag.view.ProofAndAccontView
+            android:id="@+id/proof_account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- 工程技改 -->
+
+        <LinearLayout
+            android:id="@+id/project_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_hight"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/default_tv_80"
+                    android:paddingLeft="5dp"
+                    android:text="WBS" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/gray_press" />
+
+                <com.zj.storemanag.view.custom_autotv.AutoTipTextView
+                    android:id="@+id/project_wbs_auto"
+                    style="@style/tv_transparent_bj" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray_press" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_hight"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="5dp"
+                    android:text="移动类型：221"
+                    android:textColor="@color/black" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/gray_press" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="5dp"
+                    android:text="特殊库存：Q"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray_press" />
+        </LinearLayout>
+
+        <!-- 工程技改分 -->
+
+        <LinearLayout
+            android:id="@+id/project_part_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_hight"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="@dimen/out_base_width"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="5dp"
+                    android:text="制造分公司 WBS"
+                    android:textColor="@color/black" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/gray_press" />
+
+                <com.zj.storemanag.view.custom_autotv.AutoTipTextView
+                    android:id="@+id/project_part_wbs_auto"
+                    style="@style/tv_transparent_bj" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray_press" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_hight"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="@dimen/out_base_width"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="5dp"
+                    android:text="分子公司 WBS"
+                    android:textColor="@color/black" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/gray_press" />
+
+                <com.zj.storemanag.view.custom_autotv.AutoTipTextView
+                    android:id="@+id/project_part_wbsson_auto"
+                    style="@style/tv_transparent_bj" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray_press" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_hight"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="5dp"
+                    android:text="移动类型：415"
+                    android:textColor="@color/black" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/gray_press" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="5dp"
+                    android:text="特殊库存：Q"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray_press" />
+        </LinearLayout>
+
+        <!-- 寄售备出-移库 -->
+
+        <LinearLayout
+            android:id="@+id/consign_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_hight"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/default_tv_80"
+                    android:paddingLeft="5dp"
+                    android:text="供应商" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/gray_press" />
+
+                <com.zj.storemanag.view.custom_autotv.AutoTipTextView
+                    android:id="@+id/consign_supper_auto"
+                    style="@style/tv_transparent_bj" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray_press" />
+
+            <com.zj.storemanag.view.custom_autotv.FactoryStoreLineBjView
+                android:id="@+id/consign_factory_store"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray_press" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_hight"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="5dp"
+                    android:text="移动类型：411"
+                    android:textColor="@color/black" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/gray_press" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="5dp"
+                    android:text="特殊库存：K"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray_press" />
+        </LinearLayout>
+
+        <!-- 按成本中心-內部投料 -->
+
+        <LinearLayout
+            android:id="@+id/center_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_hight"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/default_tv_80"
+                    android:paddingLeft="5dp"
+                    android:text="成本中心" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/gray_press" />
+
+                <com.zj.storemanag.view.custom_autotv.AutoTipTextView
+                    android:id="@+id/center_auto"
+                    style="@style/tv_transparent_bj" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray_press" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_hight"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/center_movetype1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="5dp"
+                    android:text="移动类型：201"
+                    android:textColor="@color/black"
+                    android:visibility="gone" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/gray_press" />
+
+                <TextView
+                    android:id="@+id/center_movetype2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="5dp"
+                    android:text="移动类型：522"
+                    android:textColor="@color/black"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray_press" />
+        </LinearLayout>
+
+        <!-- 按客号-外-內 -->
+
+        <LinearLayout
+            android:id="@+id/guest_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_hight"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/default_tv_80"
+                    android:paddingLeft="5dp"
+                    android:text="客户号" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/gray_press" />
+
+                <com.zj.storemanag.view.custom_autotv.AutoTipTextView
+                    android:id="@+id/guest_no_auto"
+                    style="@style/tv_transparent_bj"
+                    android:inputType="number" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray_press" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_hight"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/guest_movetype1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="5dp"
+                    android:text="移动类型：913"
+                    android:textColor="@color/black"
+                    android:visibility="gone" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/gray_press" />
+
+                <TextView
+                    android:id="@+id/guest_movetype2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="5dp"
+                    android:text="移动类型：902"
+                    android:textColor="@color/black"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray_press" />
+        </LinearLayout>
+
+        <!-- 跨（同）公司移库 -->
+
+        <LinearLayout
+            android:id="@+id/company_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <com.zj.storemanag.view.custom_autotv.FactoryStoreLineBjView
+                android:id="@+id/company_factory_store"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray_press" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_hight"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/company_movetype1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="5dp"
+                    android:text="移动类型：301"
+                    android:textColor="@color/black"
+                    android:visibility="gone" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/gray_press" />
+
+                <TextView
+                    android:id="@+id/company_movetype2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="5dp"
+                    android:text="移动类型：311"
+                    android:textColor="@color/black"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray_press" />
+        </LinearLayout>
+
+        <!-- 按维修订单 -->
+
+        <LinearLayout
+            android:id="@+id/modify_order_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+          <!--   <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_hight"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/default_tv_80"
+                    android:paddingLeft="5dp"
+                    android:text="维修订单" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/gray_press" />
+
+                <RelativeLayout style="@style/default_transparent_bj" >
+
+                    <Button
+                        android:id="@+id/modify_order_btn"
+                        style="@style/right_btn"
+                        android:text="查"
+                        android:textColor="@color/black" />
+
+                    <com.zj.storemanag.view.custom_autotv.AutoTipTextView
+                        android:id="@+id/modify_order_auto"
+                        style="@style/myAutoCompleteTv"
+                        android:layout_toLeftOf="@+id/modify_order_btn" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray_press" /> -->
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/default_hight"
+                android:gravity="center_vertical"
+                android:text="移动类型：261"
+                android:textColor="@color/black" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray_press" />
+        </LinearLayout>
+
+        <!-- 外部备件入库 -->
+
+        <LinearLayout
+            android:id="@+id/external_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+<!--             <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_hight"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/default_tv_80"
+                    android:text="订单号：" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/gray_press" />
+
+                <RelativeLayout style="@style/default_transparent_bj" >
+
+                    <Button
+                        android:id="@+id/order_btn"
+                        style="@style/right_btn"
+                        android:text="查"
+                        android:textColor="@color/black" />
+
+                    <com.zj.storemanag.view.custom_autotv.AutoTipTextView
+                        android:id="@+id/order_auto"
+                        style="@style/myAutoCompleteTv"
+                        android:layout_toLeftOf="@+id/order_btn" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray_press" />
+ -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_hight"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/default_tv_80"
+                    android:text="供应商" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/gray_press" />
+
+                <TextView
+                    android:id="@+id/order_supplier_et"
+                    style="@style/tv_transparent_bj" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray_press" />
+        </LinearLayout>
+
+        <!-- 内部备件入库 -->
+
+        <LinearLayout
+            android:id="@+id/internal_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <com.zj.storemanag.view.custom_autotv.FactoryStoreLineBjView
+                android:id="@+id/internal_factory_store"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray_press" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/default_hight"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/default_tv_80"
+                    android:text="成本中心" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/gray_press" />
+
+                <com.zj.storemanag.view.custom_autotv.AutoTipTextView
+                    android:id="@+id/internal_center_auto"
+                    style="@style/tv_transparent_bj" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray_press" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

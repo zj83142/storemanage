@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <RelativeLayout
+        android:id="@+id/rfid_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_hight" >
+
+        <Button
+            android:id="@+id/equip_list_new_btn"
+            style="@style/right_btn"
+            android:text="新"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/default_hight"
+            android:layout_toLeftOf="@+id/equip_list_new_btn" >
+
+            <Button
+                android:id="@+id/equip_list_search_btn"
+                style="@style/right_btn"
+                android:text="查" />
+
+            <!--
+                 <Button
+                android:id="@+id/equip_list_scan_btn"
+                style="@style/default_text_btn"
+                android:layout_toLeftOf="@+id/equip_list_search_btn"
+                android:text="扫" />
+            -->
+
+            <TextView
+                android:id="@+id/equip_list_rfid_tv"
+                style="@style/default_tv"
+                android:text="标签: " />
+
+            <EditText
+                android:id="@+id/equip_list_rfid_et"
+                style="@style/default_tv_bj"
+                android:textSize="13sp"
+                android:maxLength="32"
+                android:layout_toLeftOf="@+id/equip_list_search_btn"
+                android:layout_toRightOf="@+id/equip_list_rfid_tv" />
+
+            <!--
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@+id/equip_list_scan_btn"
+                android:layout_toRightOf="@+id/equip_list_rfid_tv"
+                android:background="@drawable/set_et_bj" >
+
+                <Button
+                    android:id="@+id/equip_list_rfid_btn"
+                    style="@style/arrow_down_btn" />
+
+               
+            </RelativeLayout>
+            -->
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/equip_list_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="#00000000"
+        android:divider="@drawable/transparent"
+        android:fadingEdge="none"
+        android:listSelector="@drawable/transparent"
+        android:scrollbars="none" >
+    </ListView>
+
+</LinearLayout>
